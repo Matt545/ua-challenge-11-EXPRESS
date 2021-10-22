@@ -9,6 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matt545/ua-challenge-11-EXPRESS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Matt545/ua-challenge-11-EXPRESS/issues"
+  },
+  "homepage": "https://github.com/Matt545/ua-challenge-11-EXPRESS#readme"
 }
