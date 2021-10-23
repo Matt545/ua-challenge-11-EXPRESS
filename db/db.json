@@ -1,5 +1,5 @@
 {
-  "dbArray": [
+  "notes": [
     {
       "title": "Test Title",
       "text": "Test text"
@@ -8,6 +8,16 @@
       "title": "test1",
       "text": "test1",
       "id": "1"
+    },
+    {
+      "title": "testerooni",
+      "text": "testyboy",
+      "id": "2"
+    },
+    {
+      "title": "notes",
+      "text": "notes",
+      "id": "3"
     }
   ]
 }
