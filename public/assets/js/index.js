@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -52,13 +54,14 @@ const saveNote = (note) =>
         alert('Added Note');
       });
 
-/*const deleteNote = (id) =>
+const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
     }
-    */
+  });
+
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);

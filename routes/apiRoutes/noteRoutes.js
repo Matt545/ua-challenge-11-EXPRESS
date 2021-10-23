@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { notes } = require('../../db/db');
 const { createNewNote, findById } = require('../../lib/notes');
+const fs = require('fs');
 
 router.get('/notes', (req, res) => {
     let results = notes;
@@ -28,11 +29,12 @@ router.get('/notes/:id', (req, res) => {
 });
 
 router.delete('/notes/:id', (req, res) => {
-    const result = findById(req.params.id, notes);
-    if (result) {
-        res.json(req.body);
-        console.log('Note deleted');
-    }
+    const result = req.params.id;
+
+    console.log('Note deleted');
+    console.log(result);
+    return result;
+
 });
 
 module.exports = router;
