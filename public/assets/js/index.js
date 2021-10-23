@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -102,10 +100,9 @@ const handleNoteDelete = (e) => {
     activeNote = {};
   }
 
-  deleteNote(noteId).then(() => {
-    getAndRenderNotes();
-    renderActiveNote();
-  });
+  deleteNote(noteId);
+  getAndRenderNotes();
+  renderActiveNote();
 };
 
 // Sets the activeNote and displays it
