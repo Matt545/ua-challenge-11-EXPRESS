@@ -52,13 +52,13 @@ const saveNote = (note) =>
         alert('Added Note');
       });
 
-const deleteNote = (id) =>
+/*const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
-    },
-  });
+    }
+    */
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
@@ -93,7 +93,7 @@ const handleNoteDelete = (e) => {
   e.stopPropagation();
 
   const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute('id'));
+  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
 
   if (activeNote.id === noteId) {
     activeNote = {};

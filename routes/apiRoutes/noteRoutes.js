@@ -27,4 +27,12 @@ router.get('/notes/:id', (req, res) => {
     }
 });
 
+router.delete('/notes/:id', (req, res) => {
+    const result = findById(req.params.id, notes);
+    if (result) {
+        res.json(req.body);
+        console.log('Note deleted');
+    }
+});
+
 module.exports = router;
