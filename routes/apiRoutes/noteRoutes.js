@@ -3,11 +3,10 @@ const { notes } = require('../../db/db');
 
 router.get('/notes', (req, res) => {
     let results = notes;
-    console.log(notes);
-
     res.json(results);
+    console.log(results);
 
-    res.send(results);
-})
+    //res.send(results);
+});
 
 module.exports = router;
